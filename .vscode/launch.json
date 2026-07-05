@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ASCII Video",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/ascii_cat.py",
+      "console": "integratedTerminal",
+      "args": ["${input:videoPath}"]
+    },
+    {
+      "name": "Run ASCII Video High Detail",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/ascii_cat.py",
+      "console": "integratedTerminal",
+      "args": ["${input:videoPath}", "--cols", "120", "--zoom", "1.25", "--fps", "24"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "videoPath",
+      "type": "promptString",
+      "description": "Video path",
+      "default": "${workspaceFolder}/sample.mp4"
+    }
+  ]
+}

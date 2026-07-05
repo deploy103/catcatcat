@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local input videos are ignored so personal media is not published by accident.
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
